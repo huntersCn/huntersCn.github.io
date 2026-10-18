@@ -1,0 +1,12 @@
+{% comment %}
+  Determine TOC state from the rendered content. Chirpy's upstream include
+  checks `page.content`, which is still the Markdown source for regular pages.
+{% endcomment %}
+
+{% assign enable_toc = false %}
+{% if site.toc and page.toc %}
+  {% assign _toc_probe = content | default: page.content %}
+  {% if _toc_probe contains '<h2' or _toc_probe contains '<h3' %}
+    {% assign enable_toc = true %}
+  {% endif %}
+{% endif %}

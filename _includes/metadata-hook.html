@@ -1,0 +1,49 @@
+<style>
+  /* The project has no logo asset; do not leave an empty avatar ring. */
+  #sidebar #avatar:not(:has(img)) {
+    display: none;
+  }
+
+  /* Unpacked game UI icons used in report headings. */
+  .content h2 img.gi,
+  .content h3 img.gi,
+  .content h4 img.gi {
+    display: inline-block;
+    width: 1.08em;
+    height: 1.08em;
+    margin: 0 0.35em 0 0;
+    vertical-align: -0.16em;
+    object-fit: contain;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .content h4 img.gi {
+    width: 1em;
+    height: 1em;
+  }
+
+  /* Heading icons are decorative, not lightbox links. */
+  .content h2 a:has(> img.gi),
+  .content h3 a:has(> img.gi),
+  .content h4 a:has(> img.gi) {
+    pointer-events: none;
+  }
+
+  /* White line-art icons become dark on light backgrounds. */
+  img.gi-invert {
+    filter: invert(1) brightness(0.25);
+  }
+
+  [data-bs-theme="dark"] img.gi-invert {
+    filter: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html:not([data-bs-theme="light"]) img.gi-invert {
+      filter: none;
+    }
+  }
+</style>
