@@ -9,21 +9,21 @@
 | --- | --- | --- |
 | 问题 / 不具合 | `categories/issues.png` | `ui-gray/101` |
 | 设计 / 設計 | `categories/design.png` | `ui-gray/052` |
-| 怪物 / モンスター | `categories/monster.png` | `monsters/100` |
-| 玩家 / プレイヤー | `categories/player.png` | `keyboard/141` |
-| 据点 / 拠点 | `categories/base.png` | `icons8/001` |
-| 其他 / その他 | `categories/other.png` | `ui-gray/028` |
+| 怪物 / モンスター | `categories/monster.png` | `monsters/076` |
+| 玩家 / プレイヤー | `categories/player.png` | `ui-gray/125` |
+| 据点 / 拠点 | `categories/base.png` | `monsters/000` |
+| 其他 / その他 | `categories/other.png` | `ui-gray/001` |
 | 任务 / クエスト | `categories/quest.png` | `icons8/003` |
-| 界面 / UI | `categories/ui.png` | `ui-gray/008` |
+| 界面 / UI | `categories/ui.png` | `ui-gray/171` |
 | 水下 / 水中 | `categories/water.png` | `ui-color/013` |
-| 技能 / スキル | `categories/skill.png` | `equipment/006` |
+| 技能 / スキル | `categories/skill.png` | `monsters/062` |
 | 随从猫 / オトモ | `categories/palico.png` | `status/120` |
 | 支援 / 支援 | `categories/support.png` | `equipment/004` |
-| 鹭鹰龙 / セクレト | `categories/seikret.png` | `status/116` |
+| 鹭鹰龙 / セクレト | `categories/seikret.png` | `ui-gray/200` |
 | 系统 / システム | `categories/system.png` | `ui-gray/170` |
 | 画面 / 画面 | `categories/graphics.png` | `ui-color/000` |
 | 网络 / ネットワーク | `categories/network.png` | `ui-gray/182` |
-| 原野 / フィールド | `categories/field.png` | `ui-gray/176` |
+| 原野 / フィールド | `categories/field.png` | `monsters/022` |
 
 ## 武器图标
 
