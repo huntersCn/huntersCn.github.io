@@ -1,0 +1,201 @@
+<!-- Custom sidebar: language-neutral top-level navigation, language switch at bottom-left. -->
+
+{% assign is_zh = false %}
+{% if page.lang contains 'zh' %}{% assign is_zh = true %}{% endif %}
+
+{% assign nav_home = '/' %}
+{% if is_zh %}
+  {% assign nav_main = '/zh/' %}
+  {% assign nav_bugs = '/zh/bugs/' %}
+  {% assign nav_proposals = '/zh/proposals/' %}
+  {% assign label_home = '首页' %}
+  {% assign label_main = '本文' %}
+  {% assign label_bugs = '问题' %}
+  {% assign label_proposals = '方案' %}
+  {% assign label_weapons = '武器' %}
+  {% assign label_signatures = '署名者' %}
+{% else %}
+  {% assign nav_main = '/ja/' %}
+  {% assign nav_bugs = '/ja/bugs/' %}
+  {% assign nav_proposals = '/ja/proposals/' %}
+  {% assign label_home = 'ホーム' %}
+  {% assign label_main = '本文' %}
+  {% assign label_bugs = '不具合' %}
+  {% assign label_proposals = '改善案' %}
+  {% assign label_weapons = '武器' %}
+  {% assign label_signatures = '署名者' %}
+{% endif %}
+
+{% assign alt_url = '/zh/' %}
+{% assign alt_label = '中文' %}
+{% if is_zh %}
+  {% assign alt_url = '/ja/' %}
+  {% assign alt_label = '日本語' %}
+{% endif %}
+{% if page.url contains '/ja/' %}
+  {% assign alt_url = page.url | replace_first: '/ja/', '/zh/' %}
+  {% assign alt_label = '中文' %}
+{% elsif page.url contains '/zh/' %}
+  {% assign alt_url = page.url | replace_first: '/zh/', '/ja/' %}
+  {% assign alt_label = '日本語' %}
+{% endif %}
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
+      {%- if site.avatar != empty and site.avatar -%}
+        {%- capture avatar_url -%}
+          {% include media-url.html src=site.avatar %}
+        {%- endcapture -%}
+        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+      {%- endif -%}
+    </a>
+
+    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+  </header>
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <li class="nav-item{% if page.url == nav_home %} active{% endif %}">
+        <a href="{{ nav_home | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>{{ label_home }}</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == nav_main %} active{% endif %}">
+        <a href="{{ nav_main | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-book-open"></i>
+          <span>{{ label_main }}</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == nav_bugs %} active{% endif %}">
+        <a href="{{ nav_bugs | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-bug"></i>
+          <span>{{ label_bugs }}</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == nav_proposals %} active{% endif %}">
+        <a href="{{ nav_proposals | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-lightbulb"></i>
+          <span>{{ label_proposals }}</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url contains '/weapons/' %} active{% endif %}">
+        <a href="{{ '/weapons/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-shield-halved"></i>
+          <span>{{ label_weapons }}</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == '/signatures/' %} active{% endif %}">
+        <a href="{{ '/signatures/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-users"></i>
+          <span>{{ label_signatures }}</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
+    <a href="{{ alt_url | relative_url }}" class="lang-toggle" aria-label="Switch language to {{ alt_label }}">
+      <i class="fas fa-language"></i>
+      <span>{{ alt_label }}</span>
+    </a>
+
+    <span class="icon-border"></span>
+
+    {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
+      {%- capture icon_system -%}
+        <i class="fa-solid fa-display" data-theme-mode="system"></i>
+      {%- endcapture -%}
+
+      {%- capture icon_light -%}
+        <i class="fa-regular fa-sun" data-theme-mode="light"></i>
+      {%- endcapture -%}
+
+      {%- capture icon_dark -%}
+        <i class="fa-regular fa-moon" data-theme-mode="dark"></i>
+      {%- endcapture -%}
+
+      <div class="btn-group dropup">
+        <button
+          type="button"
+          class="btn btn-link nav-link"
+          aria-label="Switch Mode"
+          id="mode-toggle"
+          data-bs-toggle="dropdown"
+        >
+          {{- icon_light -}}
+          {{- icon_dark -}}
+          {{- icon_system -}}
+        </button>
+        <ul class="dropdown-menu rounded-3 mb-1 p-1">
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="light">
+              {{- icon_light -}}
+              {{- site.data.locales[include.lang].theme.light -}}
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="dark">
+              {{- icon_dark -}}
+              {{- site.data.locales[include.lang].theme.dark -}}
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-items-center" type="button" data-theme-mode="system">
+              {{- icon_system -}}
+              {{- site.data.locales[include.lang].theme.system -}}
+            </button>
+          </li>
+        </ul>
+      </div>
+    {% endunless %}
+
+    {% for entry in site.data.contact %}
+      {%- assign url = null -%}
+
+      {% case entry.type %}
+        {% when 'github', 'twitter' %}
+          {%- unless site[entry.type].username -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'email' %}
+          {%- unless site.social.email -%}
+            {%- continue -%}
+          {%- endunless -%}
+          {%- assign email = site.social.email | split: '@' -%}
+          {%- capture url -%}
+            javascript:void(location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@'))
+          {%- endcapture -%}
+        {% when 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
+        {% else %}
+          {% assign url = entry.url %}
+      {% endcase %}
+
+      {% if url %}
+        <a
+          href="{{ url }}"
+          aria-label="{{ entry.type }}"
+          {% assign link_types = '' %}
+          {% unless entry.noblank %}
+            target="_blank"
+            {% assign link_types = 'noopener noreferrer' %}
+          {% endunless %}
+          {% if entry.type == 'mastodon' %}
+            {% assign link_types = link_types | append: ' me' | strip %}
+          {% endif %}
+          {% unless link_types == empty %}
+            rel="{{ link_types }}"
+          {% endunless %}
+        >
+          <i class="{{ entry.icon }}"></i>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</aside>

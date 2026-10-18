@@ -32,6 +32,25 @@
     pointer-events: none;
   }
 
+  /* Sidebar language switch */
+  #sidebar .sidebar-bottom .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-right: 0.35rem;
+    padding: 0.18rem 0.55rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 999px;
+    color: var(--bs-body-color);
+    font-size: 0.72rem;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  #sidebar .sidebar-bottom .lang-toggle:hover {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+  }
   /* Cross-reference markers in the main report. */
   .content sup a.ref {
     display: inline-block;
