@@ -43,3 +43,5 @@ lang: ja-JP
 - [轻弩炮](/zh/weapons/light-bowgun/)
 - [重弩炮](/zh/weapons/heavy-bowgun/)
 - [弓](/zh/weapons/bow/)
+
+{% include reading-nav.html %}

@@ -26,3 +26,5 @@ lang: ja-JP
 ---
 
 掲載名に誤りや重複がある場合は、[GitHub](https://github.com/huntersCn/huntersCn/issues) よりご連絡ください。
+
+{% include reading-nav.html %}

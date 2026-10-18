@@ -1,0 +1,57 @@
+{% assign current_lang = page.lang | default: site.lang %}
+{% if current_lang contains 'zh' %}
+  {% assign order = site.data.reading_order.zh %}
+  {% assign label_prev = '上一篇' %}
+  {% assign label_next = '下一篇' %}
+  {% assign label_progress = '篇' %}
+  {% assign label_done = '读完' %}
+  {% assign label_home = '返回首页' %}
+{% else %}
+  {% assign order = site.data.reading_order.ja %}
+  {% assign label_prev = '前へ' %}
+  {% assign label_next = '次へ' %}
+  {% assign label_progress = '篇' %}
+  {% assign label_done = '読了' %}
+  {% assign label_home = 'ホームへ' %}
+{% endif %}
+
+{% assign idx = -1 %}
+{% for item in order %}
+  {% if item.url == page.url %}
+    {% assign idx = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if idx >= 0 %}
+  {% assign total = order.size %}
+  {% assign human_index = idx | plus: 1 %}
+  {% assign prev_index = idx | minus: 1 %}
+  {% assign next_index = idx | plus: 1 %}
+  {% assign prev = order[prev_index] %}
+  {% assign next = order[next_index] %}
+
+  <nav class="reading-nav" aria-label="Reading navigation">
+    {% if idx > 0 and prev %}
+      <a class="reading-nav-prev" href="{{ prev.url | relative_url }}">
+        <span>{{ label_prev }}</span>
+        <strong>{{ prev.title }}</strong>
+      </a>
+    {% else %}
+      <span class="reading-nav-empty"></span>
+    {% endif %}
+
+    <span class="reading-nav-progress">{{ human_index }} / {{ total }}</span>
+
+    {% if next %}
+      <a class="reading-nav-next" href="{{ next.url | relative_url }}">
+        <span>{{ label_next }}</span>
+        <strong>{{ next.title }}</strong>
+      </a>
+    {% else %}
+      <a class="reading-nav-next reading-nav-done" href="{{ '/' | relative_url }}">
+        <span>{{ label_done }}</span>
+        <strong>{{ label_home }}</strong>
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
