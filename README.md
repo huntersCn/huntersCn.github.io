@@ -12,7 +12,7 @@
 | `/zh/` | 中文正文 |
 | `/ja/bugs/`、`/zh/bugs/` | 问题与复现记录（B-01～B-07） |
 | `/ja/proposals/`、`/zh/proposals/` | 独立改进方案（P-01～P-19） |
-| `/weapons/` | 14 种武器索引 |
+| `/ja/weapons/`、`/zh/weapons/` | 14 种武器索引 |
 | `/ja/weapons/...`、`/zh/weapons/...` | 每种武器单独一页 |
 | `/signatures/` | 共同署名者名单 |
 
@@ -48,13 +48,18 @@ bundle exec jekyll serve --livereload
 
 ## 内容维护
 
-- 正文：`_tabs/ja.md`、`_tabs/zh.md`
-- 问题记录：`ja/bugs.md`、`zh/bugs.md`
-- 独立改进方案：`ja/proposals.md`、`zh/proposals.md`
-- 武器页：`ja/weapons/`、`zh/weapons/`
+- 正文：`_posts/2026-10-18-ja-report.md`、`2026-10-18-zh-report.md`
+- 问题记录：`_posts/2026-10-18-ja-bugs.md`、`2026-10-18-zh-bugs.md`
+- 独立改进方案：`_posts/2026-10-18-ja-proposals.md`、`2026-10-18-zh-proposals.md`
+- 武器页：`_posts/2026-10-18-{ja,zh}-weapon-*.md`
+- 武器索引：`_tabs/ja-weapons.md`、`_tabs/zh-weapons.md`
 - 签名数据：`_data/signatories.yml`
 - 术语对照：`tools/TERMS.md`
-- 标题图标：`icons/`，对应关系见 `tools/ICON-MAP.md`
+- 分类图标：`assets/img/icons/categories/`
+- 武器图标：`assets/img/icons/weapons/`
+- 报告截图：`assets/img/report/`
+- 切好的图集：`assets/img/atlas/`
+- 图标对应：`tools/ICON-MAP.md`
 
 正文用 `B-xx` 角标连接问题记录；长期设计集中在正文末尾的 `<details>` 中，默认关闭。
 修改问题时请保留 `b-xx` 的 `id`，否则角标会失效。

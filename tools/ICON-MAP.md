@@ -1,31 +1,52 @@
-# 标题图标对应表
+# 图标对应表
 
-只替换报告中原本使用 emoji 的标题，不替换正文，也不额外给每个小节加图标。
+站点使用的图标来自 `assets/img/atlas/` 中切分好的图集。  
+分类图标放在 `assets/img/icons/categories/`，武器图标放在 `assets/img/icons/weapons/`。
 
-| 标题（中 / 日） | 图标 | 来源（游戏内 UI） |
+## 分类图标
+
+| 用途 | 站点文件 | 图集来源 |
 | --- | --- | --- |
-| 问题错误反馈 / 問題・不具合フィードバック | `icons/issues.png` | `iconFont_KB00_IMLM4.PNG` 感叹号 |
-| 设计改动意见 / 設計変更意見 | `icons/design.png` | `tex030300_0_IMLM4.png` 书本 |
-| 怪物相关 / モンスター関連 | `icons/monster.png` | `tex_EmIcon_00/EM0001` |
-| 玩家相关 / プレイヤー関連 | `icons/player.png` | `tex000201_40_IMLM4.png` 剑盾 |
-| 据点/设施 / 拠点・施設 | `icons/base.png` | `tex000201_40_IMLM4.png` 帐篷 |
-| 其他 / その他 | `icons/other.png` | `tex030300_0_IMLM4.png` 文件页 |
-| 任务 / クエスト | `icons/quest.png` | `tex020202_0_IMLM4.png` 沙漏 |
-| 通用 / 汎用 | `icons/other.png` | 同上（复用） |
-| 用户界面 / ユーザーインターフェース | `icons/ui.png` | `tex020500_0_IMLM4.png` 菜单框 |
-| 水下狩猎 / 水中の狩猟操作 | `icons/water.png` | `tex020902_1_IMLM4.png` 水滴 |
-| 技能 / スキル | `icons/skill.png` | `tex000201_40_IMLM4.png` 宝石 |
-| 随从猫 / オトモアイルー | `icons/palico.png` | `tex020902_0_IMLM4.png` 艾露猫 |
-| 支援猎人 / 支援ハンター | `icons/support.png` | `tex000201_40_IMLM4.png` 盾 |
-| 鹭鹰龙 / セクレト | `icons/seikret.png` | `tex_EmIcon_00/EM0022` |
-| 系统 / システム | `icons/system.png` | `tex000201_40_IMLM4.png` 砥石/工具 |
-| 画面表现 / 画面表現 | `icons/graphics.png` | `tex020902_1_IMLM4.png` 闪光 |
-| 网络 / ネットワーク | `icons/network.png` | `tex020400_0_IMLM4.png` Wi-Fi |
-| 原野 / フィールド | `icons/field.png` | `tex020700_0_IMLM4.png` 放大镜 |
+| 问题 / 不具合 | `categories/issues.png` | `ui-gray/101` |
+| 设计 / 設計 | `categories/design.png` | `ui-gray/052` |
+| 怪物 / モンスター | `categories/monster.png` | `monsters/100` |
+| 玩家 / プレイヤー | `categories/player.png` | `keyboard/141` |
+| 据点 / 拠点 | `categories/base.png` | `icons8/001` |
+| 其他 / その他 | `categories/other.png` | `ui-gray/028` |
+| 任务 / クエスト | `categories/quest.png` | `icons8/003` |
+| 界面 / UI | `categories/ui.png` | `ui-gray/008` |
+| 水下 / 水中 | `categories/water.png` | `ui-color/013` |
+| 技能 / スキル | `categories/skill.png` | `equipment/006` |
+| 随从猫 / オトモ | `categories/palico.png` | `status/120` |
+| 支援 / 支援 | `categories/support.png` | `equipment/004` |
+| 鹭鹰龙 / セクレト | `categories/seikret.png` | `status/116` |
+| 系统 / システム | `categories/system.png` | `ui-gray/170` |
+| 画面 / 画面 | `categories/graphics.png` | `ui-color/000` |
+| 网络 / ネットワーク | `categories/network.png` | `ui-gray/182` |
+| 原野 / フィールド | `categories/field.png` | `ui-gray/176` |
 
-## 说明
+## 武器图标
 
-- 图标统一输出为 96×96 透明 PNG，网页中按 `1em` 左右显示。
-- 白色线稿图标在浅色模式下会反相为深色（`gi-invert`），深色模式下保持白色。
-- 图标放在 `icons/`，不参与 Jekyll 的 Markdown 渲染，只作为静态资源复制。
-- 如果后续要换图标，保持文件名不变即可，不需要改正文。
+| 武器 | 站点文件 | 图集来源 |
+| --- | --- | --- |
+| 大剑 | `weapons/great-sword.png` | `keyboard/143` |
+| 太刀 | `weapons/long-sword.png` | `keyboard/142` |
+| 单手剑 | `weapons/sword-shield.png` | `keyboard/141` |
+| 双剑 | `weapons/dual-blades.png` | `keyboard/144` |
+| 大锤 | `weapons/hammer.png` | `keyboard/147` |
+| 狩猎笛 | `weapons/hunting-horn.png` | `keyboard/148` |
+| 长枪 | `weapons/lance.png` | `keyboard/145` |
+| 铳枪 | `weapons/gunlance.png` | `keyboard/146` |
+| 斩斧 | `weapons/switch-axe.png` | `keyboard/149` |
+| 盾斧 | `weapons/charge-blade.png` | `keyboard/150` |
+| 操虫棍 | `weapons/insect-glaive.png` | `keyboard/151` |
+| 轻弩炮 | `weapons/light-bowgun.png` | `keyboard/152` |
+| 重弩炮 | `weapons/heavy-bowgun.png` | `keyboard/153` |
+| 弓 | `weapons/bow.png` | `keyboard/154` |
+
+## favicon
+
+- 来源：`assets/img/atlas/cut/monsters/076.png`
+- 输出：`assets/img/favicons/`
+
+需要换某个图标时，从 `assets/img/atlas/preview/` 的拼版图里找编号，再替换对应文件即可。

@@ -16,7 +16,7 @@ lang: ja-JP
 </div>
 
 <figure class="signature-figure">
-  <img class="signature-photo" src="/image/players.png" alt="ワイルズ中国プレイヤー総意見フィードバック 参加者一覧" loading="lazy">
+  <img class="signature-photo" src="/assets/img/report/players.png" alt="ワイルズ中国プレイヤー総意見フィードバック 参加者一覧" loading="lazy">
 </figure>
 
 <div class="signature-groups">
