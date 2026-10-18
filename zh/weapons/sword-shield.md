@@ -39,4 +39,4 @@ toc: true
 
 ---
 
-[← 武器列表](/weapons/) ｜ [返回正文](/zh/#chapter-3)
+[← 武器列表](/zh/weapons/) ｜ [返回正文](/zh/#chapter-3)

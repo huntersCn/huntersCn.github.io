@@ -25,4 +25,4 @@ toc: true
 
 ---
 
-[← 武器一覧](/weapons/) ・ [本文に戻る](/ja/#chapter-3)
+[← 武器一覧](/ja/weapons/) ・ [本文に戻る](/ja/#chapter-3)
