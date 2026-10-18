@@ -1,7 +1,7 @@
 ---
 title: 署名者
 icon: fas fa-users
-order: 3
+order: 4
 permalink: /signatures/
 layout: page
 lang: ja-JP

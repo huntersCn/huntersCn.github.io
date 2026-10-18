@@ -19,8 +19,8 @@ title: モンスターハンターワイルズ 中国プレイヤー有志フィ
 tagline: より良い狩猟体験のために # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  モンスターハンター ワイルズに対する中国プレイヤー有志の不具合報告・設計提案。
-  印刷版の補足として、日本語と中国語で全文を公開しています。
+  モンスターハンター ワイルズに対する中国プレイヤー有志のフィードバック。
+  本文、不具合、設計詳細、武器別ページを日本語と中国語で公開しています。
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -229,13 +229,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - external
-
-# Printed edition (populated when the final PDF is ready)
-paper:
-  pdf_url: ""
-  updated: ""
-  note_ja: "印刷版は現在準備中です。完成次第、このページからPDFを公開します。"
-  note_zh: "纸质版正在准备中。完成后会在此页面提供 PDF 下载。"
 
 jekyll-archives:
   enabled: [categories, tags]

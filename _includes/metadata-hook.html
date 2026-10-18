@@ -4,7 +4,7 @@
     display: none;
   }
 
-  /* Unpacked game UI icons used in report headings. */
+  /* Game UI icons used in report headings. */
   .content h2 img.gi,
   .content h3 img.gi,
   .content h4 img.gi {
@@ -32,6 +32,24 @@
     pointer-events: none;
   }
 
+  /* Cross-reference markers in the main report. */
+  .content sup a.ref {
+    display: inline-block;
+    margin: 0 0.12em;
+    padding: 0 0.18em;
+    color: var(--bs-link-color);
+    font-size: 0.72em;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+  }
+
+  .content sup a.ref:hover {
+    color: var(--bs-link-hover-color);
+    border-bottom-style: solid;
+  }
+
   /* White line-art icons become dark on light backgrounds. */
   img.gi-invert {
     filter: invert(1) brightness(0.25);
@@ -47,3 +65,14 @@
     }
   }
 </style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    function openHash() {
+      if (!location.hash) return;
+      var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (el && el.tagName === "DETAILS") el.open = true;
+    }
+    openHash();
+    window.addEventListener("hashchange", openHash);
+  });
+</script>
