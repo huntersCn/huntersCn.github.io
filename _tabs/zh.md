@@ -25,7 +25,7 @@ toc: true
 
 参与编纂的有 105 位猎人，最终共同署名 143 人。里面有从《世界》入坑的，也有从旧作一路打到现在的；有只看剧情和生态的，也有刷到终盘的。下面的分歧，我们尽量保留下来，而不是压成一种声音。
 
-<h2 id="chapter-1">一、新玩家与老猎人的难度平衡</h2>
+<h2 id="chapter-1"><img class="gi" src="{{ '/icons/player.png' | relative_url }}" alt="">一、新玩家与老猎人的难度平衡</h2>
 本章的改进方案：<sup><a class="ref" href="/zh/proposals/#p-01">P-01</a></sup>
 
 
@@ -56,7 +56,7 @@ toc: true
 
 </details>
 
-<h2 id="chapter-2">二、内容量、终盘与难度</h2>
+<h2 id="chapter-2"><img class="gi" src="{{ '/icons/quest.png' | relative_url }}" alt="">二、内容量、终盘与难度</h2>
 本章的改进方案：<sup><a class="ref" href="/zh/proposals/#p-02">P-02</a></sup> <sup><a class="ref" href="/zh/proposals/#p-03">P-03</a></sup> <sup><a class="ref" href="/zh/proposals/#p-04">P-04</a></sup> <sup><a class="ref" href="/zh/proposals/#p-05">P-05</a></sup> <sup><a class="ref" href="/zh/proposals/#p-06">P-06</a></sup> <sup><a class="ref" href="/zh/proposals/#p-07">P-07</a></sup> <sup><a class="ref" href="/zh/proposals/#p-08">P-08</a></sup>
 
 
@@ -231,7 +231,7 @@ toc: true
 
 </details>
 
-<h2 id="chapter-3">三、通用动作系统</h2>
+<h2 id="chapter-3"><img class="gi" src="{{ '/icons/skill.png' | relative_url }}" alt="">三、通用动作系统</h2>
 本章的改进方案：<sup><a class="ref" href="/zh/proposals/#p-09">P-09</a></sup> <sup><a class="ref" href="/zh/proposals/#p-10">P-10</a></sup> <sup><a class="ref" href="/zh/proposals/#p-11">P-11</a></sup> <sup><a class="ref" href="/zh/proposals/#p-12">P-12</a></sup> <sup><a class="ref" href="/zh/proposals/#p-13">P-13</a></sup> <sup><a class="ref" href="/zh/proposals/#p-14">P-14</a></sup> <sup><a class="ref" href="/zh/proposals/#p-15">P-15</a></sup> <sup><a class="ref" href="/zh/proposals/#p-16">P-16</a></sup>
 
 
@@ -426,7 +426,7 @@ toc: true
 
 ---
 
-<h2 id="chapter-4">四、画面与 UI</h2>
+<h2 id="chapter-4"><img class="gi" src="{{ '/icons/graphics.png' | relative_url }}" alt="">四、画面与 UI</h2>
 本章的改进方案：<sup><a class="ref" href="/zh/proposals/#p-17">P-17</a></sup> <sup><a class="ref" href="/zh/proposals/#p-18">P-18</a></sup>
 
 
@@ -444,7 +444,7 @@ toc: true
 
 HUD 也需要更清楚：斩味各段长度、武器强化剩余时间、耐力上限剩余时间、环境伤害提示，现在都不够直观。小地图的筛选和自动重置也可以再方便一点。
 
-<h2 id="chapter-5">五、其他</h2>
+<h2 id="chapter-5"><img class="gi" src="{{ '/icons/other.png' | relative_url }}" alt="">五、其他</h2>
 本章的改进方案：<sup><a class="ref" href="/zh/proposals/#p-19">P-19</a></sup>
 
 

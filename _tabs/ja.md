@@ -25,7 +25,7 @@ toc: true
 
 編纂には 105 名のハンターが参加し、最終的に 143 名が共同署名しました。『ワールド』から入った人もいれば、旧作からずっと続けている人もいます。ストーリーや生態を楽しむ人もいれば、終盤を延々と遊ぶ人もいます。意見が割れるところは、できるだけそのまま残しました。
 
-<h2 id="chapter-1">一、新規と既存ハンターの難易度バランス</h2>
+<h2 id="chapter-1"><img class="gi" src="{{ '/icons/player.png' | relative_url }}" alt="">一、新規と既存ハンターの難易度バランス</h2>
 本章の改善案：<sup><a class="ref" href="/ja/proposals/#p-01">P-01</a></sup>
 
 
@@ -56,7 +56,7 @@ NPC が戦闘中に具体的なヒントを出す。たとえば「この攻撃�
 
 </details>
 
-<h2 id="chapter-2">二、ボリューム、終盤、難易度</h2>
+<h2 id="chapter-2"><img class="gi" src="{{ '/icons/quest.png' | relative_url }}" alt="">二、ボリューム、終盤、難易度</h2>
 本章の改善案：<sup><a class="ref" href="/ja/proposals/#p-02">P-02</a></sup> <sup><a class="ref" href="/ja/proposals/#p-03">P-03</a></sup> <sup><a class="ref" href="/ja/proposals/#p-04">P-04</a></sup> <sup><a class="ref" href="/ja/proposals/#p-05">P-05</a></sup> <sup><a class="ref" href="/ja/proposals/#p-06">P-06</a></sup> <sup><a class="ref" href="/ja/proposals/#p-07">P-07</a></sup> <sup><a class="ref" href="/ja/proposals/#p-08">P-08</a></sup>
 
 
@@ -233,7 +233,7 @@ NPC が戦闘中に具体的なヒントを出す。たとえば「この攻撃�
 
 </details>
 
-<h2 id="chapter-3">三、汎用アクション</h2>
+<h2 id="chapter-3"><img class="gi" src="{{ '/icons/skill.png' | relative_url }}" alt="">三、汎用アクション</h2>
 本章の改善案：<sup><a class="ref" href="/ja/proposals/#p-09">P-09</a></sup> <sup><a class="ref" href="/ja/proposals/#p-10">P-10</a></sup> <sup><a class="ref" href="/ja/proposals/#p-11">P-11</a></sup> <sup><a class="ref" href="/ja/proposals/#p-12">P-12</a></sup> <sup><a class="ref" href="/ja/proposals/#p-13">P-13</a></sup> <sup><a class="ref" href="/ja/proposals/#p-14">P-14</a></sup> <sup><a class="ref" href="/ja/proposals/#p-15">P-15</a></sup> <sup><a class="ref" href="/ja/proposals/#p-16">P-16</a></sup>
 
 
@@ -430,7 +430,7 @@ NPC が戦闘中に具体的なヒントを出す。たとえば「この攻撃�
 
 </details>
 
-<h2 id="chapter-4">四、画面と UI</h2>
+<h2 id="chapter-4"><img class="gi" src="{{ '/icons/graphics.png' | relative_url }}" alt="">四、画面と UI</h2>
 本章の改善案：<sup><a class="ref" href="/ja/proposals/#p-17">P-17</a></sup> <sup><a class="ref" href="/ja/proposals/#p-18">P-18</a></sup>
 
 
@@ -448,7 +448,7 @@ NPC が戦闘中に具体的なヒントを出す。たとえば「この攻撃�
 
 HUD ももう少し明確に。斬れ味の各段階の長さ、武器強化の残り時間、スタミナ上限の残り、環境ダメージの表示。ミニマップのフィルターと自動リセットも使いやすくしてほしい。
 
-<h2 id="chapter-5">五、その他</h2>
+<h2 id="chapter-5"><img class="gi" src="{{ '/icons/other.png' | relative_url }}" alt="">五、その他</h2>
 本章の改善案：<sup><a class="ref" href="/ja/proposals/#p-19">P-19</a></sup>
 
 
