@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /playernum.json
+---
+{"playernum": {{ site.data.signatories.bilibili.size | plus: site.data.signatories.qq.size }}}

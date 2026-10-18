@@ -13,6 +13,8 @@ lang: ja-JP
 
 中国の Bilibili と QQ コミュニティから、合計 **{{ total }} 名**が参加しました（順不同・敬称略）。
 
+<p><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhunterscn.github.io%2Fplayernum.json&amp;query=%24.playernum&amp;label=%E5%85%B1%E5%90%8C%E7%BD%B2%E5%90%8D%E8%80%85%E6%95%B0&amp;color=blue" alt="共同署名者数" loading="lazy"></p>
+
 ![ワイルズ中国プレイヤー総意見フィードバック 参加者一覧](/image/players.png){: width="480" }
 
 ## Bilibili（{{ bili.size }} 名）
