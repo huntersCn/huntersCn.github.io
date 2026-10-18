@@ -1,0 +1,25 @@
+{
+  "source_sheets": [
+    "equipment.webp",
+    "icons8.webp",
+    "keyboard.webp",
+    "monsters.webp",
+    "status.webp",
+    "ui-color.webp",
+    "ui-gray.webp"
+  ],
+  "counts": {
+    "equipment": 43,
+    "icons8": 8,
+    "keyboard": 169,
+    "monsters": 187,
+    "status": 183,
+    "ui-color": 40,
+    "ui-gray": 218
+  },
+  "total": 848,
+  "favicon": {
+    "source": "icon-atlas/cut/monsters/076.png",
+    "note": "blue unknown-monster icon with question mark"
+  }
+}

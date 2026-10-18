@@ -229,6 +229,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - external
+  - icon-atlas
 
 jekyll-archives:
   enabled: [categories, tags]
