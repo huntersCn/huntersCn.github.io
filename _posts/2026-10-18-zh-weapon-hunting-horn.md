@@ -9,7 +9,7 @@ author: hunterscn-zh
 toc: true
 ---
 
-<div class="weapon-icon-wrap"><img src="{{ '/assets/img/icons/weapons/hunting-horn.png' | relative_url }}" alt=""></div>
+<div class="weapon-icon-wrap"><img src="{{ '/assets/img/icons/weapons/hunting-horn.png?v=3' | relative_url }}" alt=""></div>
 
 > 本页合并了网页版中狩猎笛的条目与纸质版武器反馈。问题总表见 [B-03](/zh/bugs/#b-03)，整体设计见 [本文的战斗设计](/zh/#design-combat)。
 

@@ -9,7 +9,7 @@ author: hunterscn
 toc: true
 ---
 
-<div class="weapon-icon-wrap"><img src="{{ '/assets/img/icons/weapons/long-sword.png' | relative_url }}" alt=""></div>
+<div class="weapon-icon-wrap"><img src="{{ '/assets/img/icons/weapons/long-sword.png?v=3' | relative_url }}" alt=""></div>
 
 > このページは、Web版の太刀に関する記述と、紙面の武器別フィードバックを統合したものです。不具合の全体像は [B-03](/ja/bugs/#b-03)、設計全体は [本文の戦闘設計](/ja/#design-combat) を参照してください。
 
