@@ -4,6 +4,8 @@ title: モンスターハンターワイルズ 中国プレイヤー有志フィ
 lang: ja-JP
 ---
 
+{% assign signatory_total = site.data.signatories.bilibili.size | plus: site.data.signatories.qq.size %}
+
 > カプコン開発チームの皆様へ。印刷版でお伝えしきれなかった内容を、Web 版としてまとめ直しました。  
 > すべてを実現してほしいという要望ではありません。現場で起きたことと、それがどのシステムとつながっているかを残しています。
 
@@ -17,7 +19,7 @@ lang: ja-JP
 - [改善案一覧](/ja/proposals/) — P-01〜P-19 の独立した改善案
 - [本文の詳細設計](/ja/#design-loop)
 - [武器一覧](/ja/weapons/) — 14 種の武器ごとの統合版
-- [共同署名者](/signatures/) — 143 名の参加者
+- [共同署名者](/signatures/) — {{ signatory_total }} 名の参加者
 
 ## 中文
 
@@ -26,7 +28,7 @@ lang: ja-JP
 - [改进方案一览](/zh/proposals/) — P-01～P-19 的独立方案
 - [本文的详细设计](/zh/#design-loop)
 - [武器列表](/zh/weapons/) — 14 种武器
-- [共同署名者](/signatures/) — 143 位参与者
+- [共同署名者](/signatures/) — {{ signatory_total }} 位参与者
 
 ## 阅读顺序
 
