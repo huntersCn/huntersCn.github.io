@@ -29,8 +29,8 @@
 
 | 武器 | 站点文件 | 图集来源 |
 | --- | --- | --- |
-| 大剑 | `weapons/great-sword.png` | `keyboard/143` |
-| 太刀 | `weapons/long-sword.png` | `keyboard/142` |
+| 大剑 | `weapons/great-sword.png` | `keyboard/142` |
+| 太刀 | `weapons/long-sword.png` | `keyboard/143` |
 | 单手剑 | `weapons/sword-shield.png` | `keyboard/141` |
 | 双剑 | `weapons/dual-blades.png` | `keyboard/144` |
 | 大锤 | `weapons/hammer.png` | `keyboard/147` |
