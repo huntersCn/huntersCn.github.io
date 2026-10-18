@@ -11,6 +11,7 @@ author: hunterscn-zh
 toc: true
 ---
 
+{% assign editor_total = site.data.signatories.editors %}
 {% assign signatory_total = site.data.signatories.bilibili.size | plus: site.data.signatories.qq.size %}
 
 > 本文中的 **B-xx** 指向[问题与复现记录](/zh/bugs/)，**P-xx** 指向[改进方案一览](/zh/proposals/)，**W-xx** 指向 14 种武器的单独页面。长期设计折叠在文末，默认关闭。
@@ -25,7 +26,7 @@ toc: true
 
 也要说清楚：**这不是一份替开发团队重做整个作品的方案**，更不是要求全部采纳的清单。它是一份把现场问题按系统关系重新排过的记录。哪些先做、哪些留到下一作，决定权在开发团队。
 
-参与编纂的有 105 位猎人，最终共同署名 {{ signatory_total }} 人。里面有从《世界》入坑的，也有从旧作一路打到现在的；有只看剧情和生态的，也有刷到终盘的。下面的分歧，我们尽量保留下来，而不是压成一种声音。
+参与编纂的有 {{ editor_total }} 位猎人，最终共同署名 {{ signatory_total }} 人。里面有从《世界》入坑的，也有从旧作一路打到现在的；有只看剧情和生态的，也有刷到终盘的。下面的分歧，我们尽量保留下来，而不是压成一种声音。
 
 <h2 id="chapter-1"><img class="gi" src="{{ '/icons/player.png' | relative_url }}" alt="">新玩家与老猎人的难度平衡</h2>
 
@@ -692,10 +693,3 @@ HUD 也需要更清楚：斩味各段长度、武器强化剩余时间、耐力�
 ### 任务与天气
 
 委托任务、天气与古龙/首领技能的联系、更多领地争夺，这些都可以让原野更有变化。我们不希望它们变成又一套清单，而是让玩家在打怪时自然遇到。
-
-
-
----
-
-本文由 105 位猎人参与编纂，{{ signatory_total }} 位玩家共同署名。  
-问题记录、设计细节和武器页面分别独立，角标把它们连在一起。
