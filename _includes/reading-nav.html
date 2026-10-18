@@ -3,16 +3,10 @@
   {% assign order = site.data.reading_order.zh %}
   {% assign label_prev = '上一篇' %}
   {% assign label_next = '下一篇' %}
-  {% assign label_progress = '篇' %}
-  {% assign label_done = '读完' %}
-  {% assign label_home = '返回首页' %}
 {% else %}
   {% assign order = site.data.reading_order.ja %}
   {% assign label_prev = '前へ' %}
   {% assign label_next = '次へ' %}
-  {% assign label_progress = '篇' %}
-  {% assign label_done = '読了' %}
-  {% assign label_home = 'ホームへ' %}
 {% endif %}
 
 {% assign idx = -1 %}
@@ -23,35 +17,30 @@
 {% endfor %}
 
 {% if idx >= 0 %}
-  {% assign total = order.size %}
-  {% assign human_index = idx | plus: 1 %}
   {% assign prev_index = idx | minus: 1 %}
   {% assign next_index = idx | plus: 1 %}
   {% assign prev = order[prev_index] %}
   {% assign next = order[next_index] %}
 
-  <nav class="reading-nav" aria-label="Reading navigation">
+  <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
     {% if idx > 0 and prev %}
-      <a class="reading-nav-prev" href="{{ prev.url | relative_url }}">
-        <span>{{ label_prev }}</span>
-        <strong>{{ prev.title }}</strong>
+      <a href="{{ prev.url | relative_url }}" class="btn btn-outline-primary" aria-label="{{ label_prev }}">
+        <p>{{ prev.title }}</p>
       </a>
     {% else %}
-      <span class="reading-nav-empty"></span>
+      <div class="btn btn-outline-primary disabled" aria-label="{{ label_prev }}">
+        <p>-</p>
+      </div>
     {% endif %}
 
-    <span class="reading-nav-progress">{{ human_index }} / {{ total }}</span>
-
     {% if next %}
-      <a class="reading-nav-next" href="{{ next.url | relative_url }}">
-        <span>{{ label_next }}</span>
-        <strong>{{ next.title }}</strong>
+      <a href="{{ next.url | relative_url }}" class="btn btn-outline-primary" aria-label="{{ label_next }}">
+        <p>{{ next.title }}</p>
       </a>
     {% else %}
-      <a class="reading-nav-next reading-nav-done" href="{{ '/' | relative_url }}">
-        <span>{{ label_done }}</span>
-        <strong>{{ label_home }}</strong>
-      </a>
+      <div class="btn btn-outline-primary disabled" aria-label="{{ label_next }}">
+        <p>-</p>
+      </div>
     {% endif %}
   </nav>
 {% endif %}
